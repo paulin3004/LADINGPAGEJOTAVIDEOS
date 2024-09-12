@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Vídeos JA</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html" target="_self" id="backhome"></a>
+    </header>
+    <section>
+        <span id="box1">
+            <a href="../page3contratar/pageproposta.html">
+                <div onmouseenter="tocasom()" id="card1"></div>
+            </a>
+            <h2 id="texto1">Design</h2>
+        </span>
+        <span id="box2">
+            <a href="../page3contratar/pageproposta.html">
+                <div onmouseenter="tocasom()" id="card2"></div>
+            </a>
+            <h2>Motion Design</h2>
+        </span>
+        <span id="box3">
+            <a href="../page3contratar/pageproposta.html">
+                <div onmouseenter="tocasom()" id="card3"></div>
+            </a>
+            <h2>Edição de Vídeo</h2>
+        </span>
+    </section>
+    <audio id="hoversong" preload="auto" src="songhover/clique.mp3"></audio>
+
+    <script>
+        var som = document.getElementById('hoversong');
+
+        
+        function tocasom(){
+            console.log("O som esta tocando")
+            som.play
+        }   
+    </script>
+</body>
+</html>
