@@ -82,12 +82,11 @@ input, textarea{
     resize: none;
     
 }
+
 input, textarea:focus{
     outline: none;
 }
-textarea::-webkit-scrollbar-thumb{
-    border-radius: 10px;
-}
+
 .box button{
     width: 100%;
     color: #fff;
@@ -96,11 +95,8 @@ textarea::-webkit-scrollbar-thumb{
     cursor: pointer;
     padding: 10px;
 }
+
 label{
     display: flex;
     height: 45px;
-}
-
-.box input:focus .box{
-    border: 2px solid green;
 }
