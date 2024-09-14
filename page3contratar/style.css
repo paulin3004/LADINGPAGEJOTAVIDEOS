@@ -10,6 +10,7 @@ body{
     width: 100%;
     height: 100vh;
     background: linear-gradient(45deg, black , rgb(42, 0, 42));
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,58 +48,59 @@ section#ladoB{
     background-blend-mode: multiply;
     border-radius: 0px 25px 25px 0px;
 }
-div#button3{
+form{
     display: flex;
     flex-direction: column;
-    height: auto;
-}
-label{
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    font-family: monospace;
-    font-size: larger;
 }
-textarea{
-    border: none;
-    width: 250px;
-    height: 150px;
-    color: #fff;
-    background: transparent;
-    text-align: start;
-}
-textarea:focus{
-    outline: none;
-}
-div.button{
+div.box{
+    background-color: rgb(70, 2, 116);
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    background-color: #2a002a;
     height: 45px;
     width: 300px;
     gap: 10px;
     padding: 10px;
-    border-radius: 30px;
+    border-radius: 25px;
+    margin-bottom: 20px;
 }
-div.button input{
-    border: none;
+div#box3{
+    display: flex;
+    align-items: flex-start;
+    height: auto;
+}
+input, textarea{
     width: 100%;
-    height: 100%;
     color: #fff;
     background: transparent;
-    text-align: end;
-    margin-right: 5px;
+    border: none;
+    text-align: justify;
+    line-height: 1.5;
+    padding: 10px;
+    resize: none;
+    
 }
-div.button input:focus{
+input, textarea:focus{
     outline: none;
 }
-div#confirm{
-    display: flex;
-    justify-content: space-around;
+textarea::-webkit-scrollbar-thumb{
+    border-radius: 10px;
 }
-div#confirm button{
+.box button{
+    width: 100%;
     color: #fff;
     background: transparent;
     border: none;
     cursor: pointer;
-    
+    padding: 10px;
+}
+label{
+    display: flex;
+    height: 45px;
+}
+
+.box input:focus .box{
+    border: 2px solid green;
 }
